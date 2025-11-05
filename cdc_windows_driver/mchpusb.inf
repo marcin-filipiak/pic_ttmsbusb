@@ -1,0 +1,79 @@
+; Installation file for mchpusb driver
+; Copyright (C) 2007 by Microchip Technology, Inc.
+; All rights reserved
+
+[Version]
+Signature=$CHICAGO$
+Class=CustomUSBDevices
+ClassGuid={a503e2d3-a031-49dc-b684-c99085dbfe92}
+Provider=%MFGNAME%
+CatalogFile=mchpusb.cat
+DriverVer=05/20/2007
+
+[Manufacturer]
+%MFGNAME%=DeviceList
+
+[DestinationDirs]
+DefaultDestDir=10,System32\Drivers
+
+[SourceDisksFiles]
+mchpusb.sys=1
+wdmstub.sys=1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+[ClassInstall32]
+AddReg=ClassInstall.AddReg
+
+[ClassInstall.AddReg]
+HKR,,,,"Custom USB Devices"
+HKR,,Icon,,"-20"
+
+[DeviceList]
+ 
+%DESCRIPTION%=DriverInstall,USB\VID_04D8&PID_000B, USB\VID_04D8&PID_000C
+
+;------------------------------------------------------------------------------
+;  Windows 2000/XP Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall.ntx86]
+CopyFiles=DriverCopyFiles
+
+[DriverCopyFiles]
+mchpusb.sys,,,2
+
+[DriverInstall.ntx86.Services]
+AddService=MCHPUSB,2,DriverService
+
+[DriverService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\mchpusb.sys
+
+;------------------------------------------------------------------------------
+;  Windows 98/Me Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall]
+AddReg=DriverAddReg
+CopyFiles=DriverCopyFiles,StubCopyFiles
+DriverVer=26/01/2013
+
+[DriverAddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,"wdmstub.sys,mchpusb.sys"
+
+[StubCopyFiles]
+wdmstub.sys,,,2
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="Microchip Technology, Inc."
+INSTDISK="Microchip Technology, Inc. Installation Disc"
+DESCRIPTION="TTMSB - USB"

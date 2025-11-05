@@ -1,0 +1,15 @@
+Instrukcie wysyłane na wirtualny UART
+========================================
+           s - sound
+           m - relay1 on/off
+           n - relay2 on/off
+           t - temperature
+           l - left
+           r - rigt
+           d - down
+           u - up
+           y - read RTC
+           a - set local time to RTC
+           o - set manual RTC
+           p - test
+           x - reset uC cpu

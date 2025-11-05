@@ -1,0 +1,70 @@
+[Directories]
+Include=C:\Program Files\PICC\devices\;C:\Program Files\PICC\drivers\;C:\Program Files\PICC\drivers\C:\Program Files\PICC\devices\;Z:\home\kolgreen\Dropbox\Projekty\Elektronika\ttmsb_usb\uC\
+Library=
+LinkerScript=
+[defines]
+enabled=0
+D1=
+V1=
+[fileformats]
+forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+[PROJECT]
+Target=ttmsb.hex
+Development_Mode=
+Processor=0x4550
+Processor_Text=PIC18F4550
+ToolSuite=CCS
+CCSVersion=5.025
+Compiler=PCH
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+FileList=ttmsb.c
+[ttmsb.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=ttmsb.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=ttmsb.c
+2=ds1820.c
+3=drv\ds1820.h
+4=
+5=
+[ProjectLog]
+Days=2
+D1=19-08-2014
+D1_L=4
+D1_L1=[32592]Project Opened.
+D1_L2=[32657]Started Editing.
+D1_L3=[33110]Stopped Editing.
+D1_L4=[69898]Project Opened.
+D2=20-08-2014
+D2_L=5
+D2_L1=[74503]Project Opened.
+D2_L2=[76940]Started Editing.
+D2_L3=[77641]Stopped Editing.
+D2_L4=[78937]Started Editing.
+D2_L5=[79240]Stopped Editing.
+[Units]
+Count=1
+1=ttmsb (main)

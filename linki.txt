@@ -1,0 +1,17 @@
+http://www.rakeshmondal.info/pic18f4550-project-tutorial-part-1-USB
+http://www.rakeshmondal.info/BOOTLOADING-PIC18F4550-USB-BOARD
+https://sites.google.com/site/coolembeddedlaboratory/home/pic18f4550/tutorial-list/usb-commnication-using-ccs-pic-c
+http://ww.wmrp.com/forum/viewtopic.php?p=138754
+http://www.ccsinfo.com/forum/viewtopic.php?t=38897
+https://www.ccsinfo.com/forum/viewtopic.php?t=45164
+http://www.janwagemakers.be/wordpress/?p=102
+http://www.alfersoft.com.ar/blog/2008/07/08/usocket-usb-controlled-socket-with-pic18f4550/
+http://www.ccsinfo.com/forum/viewtopic.php?t=36653
+http://www.ccsinfo.com/faq.php?page=linux_cdc
+http://www.ccsinfo.com/forum/viewtopic.php?p=147228
+http://www.ccsinfo.com/forum/viewtopic.php?p=170971
+
+---------1wire-------------
+http://www.ccsinfo.com/forum/viewtopic.php?t=28425  (jeden czujnik)
+https://www.ccsinfo.com/forum/viewtopic.php?p=143303  (wiele czujnikow)
+http://hackaday.com/2008/12/10/parts-1-wire-temperature-sensor-ds1822/
